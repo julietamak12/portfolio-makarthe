@@ -1,0 +1,606 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ /*fuentes del html*/
+
+ @font-face {
+    font-family: poppins;
+    src: url(fonts/poppins.ttf);
+}
+
+@font-face {
+    font-family: robotomonothin;
+    src: url(fonts/robotomono-thin.ttf);
+}
+
+@font-face {
+    font-family: archivo;
+    src: url(fonts/archivoBlack.ttf);
+}
+
+@font-face {
+    font-family: poppinsthin;
+    src: url(fonts/poppins-thin.ttf);
+}
+
+
+
+/*GRID a los elementos index*/
+
+.estructuraabout {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "secciones secciones secciones secciones"
+                         "about about about about";
+    }
+
+    
+
+   
+
+
+body {
+    background-color: black;
+    }
+
+ /*menu y logo*/   
+
+
+.ancho {
+    grid-area: ancho;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+
+header{
+    grid-area: header;
+}
+
+.menu {
+    display: flex;
+    grid-area: menu;
+}
+
+.menu nav ul {
+        list-style-type: none;
+        width: max-content;
+   
+}
+
+.menu nav ul li {
+    display: inline-block;
+   
+
+}
+
+.menu nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    margin-left: 1.5rem;
+ }
+
+ .logo img {
+    height: 80px;
+}
+
+.menu .btn {
+    background-color: yellow;
+    color: black;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    padding: 5px 15px;
+ }
+
+ .btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* fin de header*/
+
+    .content{
+        grid-area: content;
+        top: 50%;
+        text-align: center;
+        left: 8%;
+    }
+    
+    h1 {
+        color: white;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 85px;
+        }
+
+    .linea {
+        border-left: 1px solid white;
+        height: 200px;
+        position: absolute;
+        left: 50%;
+        margin-left: -4px;
+        top: 20px;
+        margin-top: 90px;
+           }
+
+    button {
+        margin-top: 20px;
+        background-color: yellow;
+        color: black;
+        font-family: 'Roboto Mono', monospace;
+        border-radius: 5px;
+        border: 2px solid transparent;
+        padding: 5px 25px;
+        font-size: 20px;
+        margin-bottom: 80px;
+        }
+    
+    button:hover {
+        background-color: transparent;
+        border: 2px solid yellow;
+        padding: 5px 25px;
+        font-size: 20px;
+        color: yellow;
+        }
+
+
+/*about foto y texto*/
+    
+
+    .secciones {
+        grid-area: secciones;
+        margin-top: 200px;
+        align-items: left;
+        margin-left: 55px;
+        }
+
+    .sub {
+        color: white;
+        font-family: 'Roboto Mono', monospace;
+        margin-top: 150px;
+        font-weight: 50px;  
+        line-height: 5px;
+        border-bottom: 10px solid yellow;
+        
+    }
+
+    h2 {
+            color: white;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 75px;
+            }
+
+
+    h4 {
+        color: white;
+        font-family: 'Roboto Mono', monospace;
+        margin-top: 150px;
+        font-weight: 50px;  
+    }
+
+.about {
+    grid-area: about;
+    display: flex; 
+    padding: 6rem 15rem 0rem 15rem;
+    gap: 80px;
+}
+
+.informacion {
+    color: white;  
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+}
+
+.datosabout {
+    color: white; 
+}
+
+.aboutfoto .fotocv {
+    width: 170px;
+}
+
+
+.butondw {
+        background: yellow;
+        color: black;
+        display: inline-block;
+        font-size: 1em;
+        padding: 10px;
+        text-align: center;
+        width: 160px;
+        text-decoration: none;
+        font-family: 'Roboto Mono', monospace;
+        border-radius: 5px;
+        margin-top: 15px;
+    } 
+
+
+
+main  {
+    margin-bottom: 50px;
+}
+
+.aboutinfo {
+    align-items: center;
+}
+
+
+.datosjuli {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.nacionalidad {
+    font-family: 'Roboto Mono', monospace;
+    color: yellow; 
+}
+
+.edad {
+    font-family: 'Roboto Mono', monospace;
+    color: yellow;
+}
+
+.nacionalidad span {
+    font-family: 'Roboto Mono', monospace;
+    color: white; 
+}
+
+.edad span {
+    font-family: 'Roboto Mono', monospace;
+    color: white; 
+}
+
+/*fin de about foto y texto*/
+
+/*experiencia y educacion*/
+
+.experienciayeducacion {
+
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+    margin-top: 180px;
+}
+
+.experiencia {
+    font-family: 'Roboto Mono', monospace;
+    color: white; 
+
+}
+
+.titulo {
+    color: white;
+    font-family: 'Roboto Mono', monospace; 
+    border-bottom: 10px solid yellow;
+    font-size: 35px;
+    
+}
+
+.empresa {
+    color: white;
+    font-family: 'Roboto Mono', monospace; 
+    font-weight: bold;
+    font-size: 35px;
+    border: 2px solid yellow;
+    padding: 10px;
+    margin-top: 55px;
+
+
+}
+
+ .puesto {
+    font-family: 'Roboto Mono', monospace;
+    color: white; 
+    font-size: 30px;
+}
+
+.año {
+    font-family: 'Roboto Mono', monospace;
+    color: white; 
+    font-size: 20px;
+}
+
+.educacion {
+    font-family: 'Roboto Mono', monospace;
+    color: white; 
+    
+}
+
+.experiencia ul li { 
+    list-style-type: none;
+    display: inline-block;
+    margin-top: 55px;
+
+}
+.experiencia ul li p { 
+    margin-bottom: 30px;
+}
+
+
+.seccionservicios {
+    margin-top: 100px;
+    align-items: left;
+    margin-left: 55px;
+    }
+
+.servicios {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 50px;
+    font-weight: 50px;  
+    line-height: 5px;
+    border-bottom: 10px solid yellow;
+    font-size: 35px; 
+}
+
+.listadeservicios {
+    display: flex; 
+    justify-content: center;
+    gap: 400px;
+    margin-top: 150px;
+}
+
+.listaderecha {
+    color: white;
+    
+}
+
+.listaizquierda {
+    color: white;
+    
+}
+
+.servicios2 img {
+    color: white;
+    width: 15px;
+    
+}
+
+.fa-cloud-arrow-down {
+    color: black;
+    padding-right: 10px;
+    
+}
+
+.fa-cloud-arrow-down:hover {
+    color: yellow;
+    padding-right: 10px;
+    
+}
+
+.butondw:hover {
+        background: transparent;
+        color: yellow;
+        display: inline-block;
+        font-size: 1em;
+        padding: 10px;
+        text-align: center;
+        width: 160px;
+        text-decoration: none;
+        font-family: 'Roboto Mono', monospace;
+        border-radius: 5px;
+        margin-top: 15px;
+    }
+
+
+
+
+
+
+    /*boton desplegable redes sociales*/
+
+
+        #btn-mas{
+            display: none;
+        }
+        .container{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding-bottom: 25px;
+        }
+        .redes a, .btn-mas label{
+            display: block;
+            text-decoration: none;
+            background: white;
+            color: black;
+            width: 55px;
+            height: 55px;
+            line-height: 55px;
+            text-align: center;
+            border-radius: 50%;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+            transition: all 500ms ease;
+        }
+        .redes a:hover{
+            background: #fff;
+            color: yellow;
+        }
+        .redes a{
+            margin-bottom: -15px;
+            opacity: 0;
+            visibility: hidden;
+        }
+        #btn-mas:checked~ .redes a{
+            margin-bottom: 10px;
+            opacity: 1;
+            visibility: visible;
+        }
+        .btn-mas label{
+            cursor: pointer;
+            background: yellow;
+            font-size: 23px;
+        }
+        #btn-mas:checked ~ .btn-mas label{
+            transform: rotate(135deg);
+            font-size: 25px;
+        }
+    
+        footer {
+            grid-area: footer;
+            position: fixed;
+            width: 100%;
+            height: 20px;
+            color: white;
+            font-family: poppins;
+            align-items: center;
+            font-size: 12px;
+            font-weight: 400;
+            bottom: 0;
+            margin-top: 100px;
+            left: 0px;
+            text-align: center;
+        }
+
+        footer img {
+            width: 12px; 
+            height: 12px;
+            padding-right: 10px;
+        }  
+
+        .toggle {
+            background-color: transparent;
+            color: yellow;
+            font-size: 25px;
+            padding: 0 20px;
+            display: none;
+        }  
+
+        .service {
+            margin-bottom: 55px;
+        }  
+
+
+        /*media queary*/
+
+    
+
+        @media screen and (max-width: 1024px){
+
+            .content h1 {
+                color: white;
+                font-family: 'Roboto Mono', monospace;
+                font-size: 55px;
+            }
+
+        
+         } 
+
+
+         @media screen and (max-width: 576px){
+
+            .content {
+               margin-top: 0%;
+               
+            }
+
+            .linea {
+                display: none;
+            }
+
+            .content h1 {
+                color: white;
+                font-family: 'Roboto Mono', monospace;
+                font-size: 45px;
+            }
+
+            .menu {
+                display: none;
+            }
+
+            .ancho {
+                justify-content: center;
+                align-items: center;
+                align-items: center;
+            }
+
+            .toggle {
+                display: block;
+                background-color: transparent;
+                color: yellow;
+                font-size: 25px;
+                padding: 0 20px;
+                border: 0px;
+                margin-top: 20px;
+                margin-bottom: 0px;
+            }
+
+            .toggle:hover {
+                background-color: transparent;
+                color: yellow;
+                font-size: 25px;
+                padding: 0 20px;
+                border: 0px;
+                margin-top: 20px;
+                margin-bottom: 0px;
+            }
+            }  
+
+    
+    
+
+        @media screen and (max-width: 480px){
+
+            .content {
+               margin-top: 0%;
+            }
+
+            .content h1 {
+                color: white;
+                font-family: 'Roboto Mono', monospace;
+                font-size: 30px;
+            }
+
+            header 
+            {
+               margin: 0px 10px 10px 0px;
+            }
+
+            .content h4 {
+                color: white;
+                font-family: 'Roboto Mono', monospace;
+                font-size: 15px;
+            }
+
+            .ancho {
+                margin-bottom: 0px;
+            }
+        
+    
+         }  
+
+    
+
+
+        
+         
+
+
+
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
